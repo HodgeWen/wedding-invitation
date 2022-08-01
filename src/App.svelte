@@ -4,10 +4,9 @@
   import { invitationOpened } from './store'
 </script>
 
-<main>
-  {#if $invitationOpened}
-    <Invitation />
-  {:else}
-    <Envelope />
-  {/if}
-</main>
+{#if $invitationOpened}
+  <Invitation />
+{:else}
+  <Envelope />
+{/if}
+

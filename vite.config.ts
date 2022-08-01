@@ -6,6 +6,8 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 export default defineConfig({
   plugins: [svelte()],
 
+  publicDir: 'src/assets',
+
   server: {
     host: true
   },
